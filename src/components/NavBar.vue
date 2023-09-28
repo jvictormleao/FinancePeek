@@ -9,18 +9,18 @@ import { RouterLink, RouterView } from 'vue-router'
                 <div class="icon"><v-icon name="fa-home" scale="1.3" /></div><span class="text">Home</span><span
                     class="indicator"></span>
             </RouterLink>
-            <RouterLink class="item" to="/about">
+            <RouterLink class="item" to="/earnings">
                 <div class="icon"><v-icon name="fa-credit-card" scale="1.3" /></div>
 
                 <span class="text">Earnings</span>
                 <span class="indicator"></span>
             </RouterLink>
-            <RouterLink class="item" to="/about">
+            <RouterLink class="item" to="/expenses">
                 <div class="icon"><v-icon name="fa-regular-credit-card" scale="1.3" /></div>
                 <span class="text">Expenses</span>
                 <span class="indicator"></span>
             </RouterLink>
-            <RouterLink class="item" to="/about">
+            <RouterLink class="item" to="/goals">
                 <div class="icon"><v-icon name="md-flag-round" scale="1.3" /></div>
                 <span class="text">Goal</span>
                 <span class="indicator"></span>
@@ -76,12 +76,13 @@ import { RouterLink, RouterView } from 'vue-router'
         flex-direction: column;
         width: 25%;
         height: 3rem;
+        transition: transform .5s;
     }
 
     .icon {
         position: absolute;
         z-index: 5;
-
+        transition: all .5s;
     }
 
     .indicator {
@@ -92,6 +93,7 @@ import { RouterLink, RouterView } from 'vue-router'
         background-color: red;
         border-radius: 50%;
         visibility: hidden;
+        transition: 0.5s;
     }
 
     .text {
@@ -100,6 +102,7 @@ import { RouterLink, RouterView } from 'vue-router'
         text-align: center;
         bottom: -20px;
         visibility: hidden;
+        transition: all .5s;
     }
 
     nav a.router-link-exact-active {
@@ -114,6 +117,30 @@ import { RouterLink, RouterView } from 'vue-router'
         transform: translateY(-50%);
         visibility: visible;
         border: 8px solid #181818;
+    }
+
+    nav a.router-link-exact-active .indicator::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-top-right-radius: 20px;
+        background: transparent;
+        top: 60%;
+        left: -20px;
+        box-shadow: 0 -10px 0 0 #181818;
+    }
+
+    nav a.router-link-exact-active .indicator::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-top-left-radius: 20px;
+        background: transparent;
+        top: 60%;
+        right: -20px;
+        box-shadow: 0 -10px 0 0 #181818;
     }
 
     nav a.router-link-exact-active .text {

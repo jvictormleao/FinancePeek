@@ -22,8 +22,8 @@ const router = createRouter({
       name: 'expenses',
       component: ExpensesView
     },{
-      path: '/goal',
-      name: 'goal',
+      path: '/goals',
+      name: 'goals',
       component: GoalView
     }
   ]
