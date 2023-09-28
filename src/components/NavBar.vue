@@ -76,7 +76,7 @@ import { RouterLink, RouterView } from 'vue-router'
         flex-direction: column;
         width: 25%;
         height: 3rem;
-        transition: transform .5s;
+        transition: .5s;
     }
 
     .icon {
@@ -88,21 +88,20 @@ import { RouterLink, RouterView } from 'vue-router'
     .indicator {
         position: absolute;
         z-index: 4;
-        height: 3.5rem;
-        width: 3.5rem;
+        top: -66%;
+        height: 0;
+        width: 0;
         background-color: red;
         border-radius: 50%;
         visibility: hidden;
-        transition: 0.5s;
     }
 
     .text {
         font-size: 1rem;
         position: absolute;
         text-align: center;
-        bottom: -20px;
         visibility: hidden;
-        transition: all .5s;
+        transition: .5s;
     }
 
     nav a.router-link-exact-active {
@@ -114,7 +113,8 @@ import { RouterLink, RouterView } from 'vue-router'
     }
 
     nav a.router-link-exact-active .indicator {
-        transform: translateY(-50%);
+        width: 3.5rem;
+        height: 3.5rem;
         visibility: visible;
         border: 8px solid #181818;
     }
@@ -146,7 +146,8 @@ import { RouterLink, RouterView } from 'vue-router'
     nav a.router-link-exact-active .text {
         transform: translateY(-20px);
         visibility: visible;
-        color: white
+        color: white;
+        bottom: -20px;
     }
 
     nav a {
