@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Goals
-  </div>
+  <div><a href="">Tesrte</a></div>
 </template>
 
 <style>

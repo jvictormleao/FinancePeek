@@ -1,5 +1,5 @@
 <template>
- <div>WelcomeItem</div>
+  <div>WelcomeItem</div>
 </template>
 
 <style scoped>

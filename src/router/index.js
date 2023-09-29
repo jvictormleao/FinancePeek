@@ -4,7 +4,6 @@ import HomeView from '../views/HomeView.vue'
 import GoalView from '../views/GoalView.vue'
 import ExpensesView from '../views/ExpensesView.vue'
 
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -17,11 +16,13 @@ const router = createRouter({
       path: '/earnings',
       name: 'earnings',
       component: EarningsView
-    },{
+    },
+    {
       path: '/expenses',
       name: 'expenses',
       component: ExpensesView
-    },{
+    },
+    {
       path: '/goals',
       name: 'goals',
       component: GoalView

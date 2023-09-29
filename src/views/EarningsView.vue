@@ -1,8 +1,5 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-  <main>
-Earnings
-  </main>
+  <main>Earnings</main>
 </template>

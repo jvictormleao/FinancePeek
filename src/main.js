@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import {FaHome, FaCreditCard, FaRegularCreditCard, MdFlagRound} from 'oh-vue-icons/icons'
+import { FaHome, FaCreditCard, FaRegularCreditCard, MdFlagRound } from 'oh-vue-icons/icons'
 
 addIcons(FaHome, FaCreditCard, FaRegularCreditCard, MdFlagRound)
 

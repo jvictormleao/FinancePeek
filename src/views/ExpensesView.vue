@@ -1,9 +1,5 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <main>
-    Expenses
-  </main>
+  <main>Expenses</main>
 </template>
