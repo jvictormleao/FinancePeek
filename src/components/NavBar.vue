@@ -121,7 +121,8 @@ import { RouterLink, RouterView } from 'vue-router'
     position: absolute;
     text-align: center;
     visibility: hidden;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.5s;
+    text-decoration: none;
   }
 
   nav a.router-link-exact-active {
@@ -162,6 +163,7 @@ import { RouterLink, RouterView } from 'vue-router'
   nav a {
     display: inline-block;
     padding: 0;
+    
   }
 
   nav a:first-of-type {
